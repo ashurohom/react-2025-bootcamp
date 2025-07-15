@@ -7,6 +7,14 @@ function App(){
     function handelClick() {
       setCount(count+1);
     }
+    
+    function handelClicks() {
+      setCount(count-1);
+    }
+
+    function handelClickss() {
+      setCount(0);
+    }
 
   return(
     <div>
@@ -16,7 +24,9 @@ function App(){
       {/* <Footer/> */}
 
       <p>You Clicked <b> {count} </b> Times</p>
-      <button onClick={handelClick}>Click Me</button>
+      <button onClick={handelClick}>Inc + </button>
+      <button onClick={handelClicks}>Dec - </button>
+      <button onClick={handelClickss}>Reset 0 </button>
     </div>
   );
 }

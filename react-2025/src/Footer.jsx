@@ -4,3 +4,5 @@ function Footer(props){
     );
 }
 export default Footer;
+
+// footer code
