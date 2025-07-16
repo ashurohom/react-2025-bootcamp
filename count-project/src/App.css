@@ -41,3 +41,27 @@
   color: #888;
 }
 
+.name{
+  color: rgb(253, 165, 0);
+}
+
+.b1{
+  background-color: green;
+  color: black;
+  margin-left: 3px;
+  padding-left: 10px;
+}
+
+.b2{
+  background-color: red;
+  color: black;
+  margin-left: 3px;
+  padding-left: 10px;
+}
+
+.b3{
+  background-color: white;
+  color: black;
+  margin-left: 3px;
+  padding-left: 10px;
+}
