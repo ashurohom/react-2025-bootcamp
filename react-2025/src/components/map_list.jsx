@@ -1,7 +1,7 @@
 import React from 'react'
 
 function Map_list() {
-    names = ["Ashu","Soham","Vraj",]
+    const names = ["Ashu","Soham","Vraj",]
   return (
     <div>
       <h3>{names[0]}</h3>
@@ -10,5 +10,4 @@ function Map_list() {
     </div>
   )
 }
-
 export default Map_list

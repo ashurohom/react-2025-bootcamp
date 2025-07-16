@@ -1,6 +1,7 @@
 import Welcome from "./Welcome";
 // import Footer from "./Footer";
 import { useState } from "react";
+import Map_list from "./map_list";
 
 function App(){
     const [count,setCount] = useState(0);
@@ -27,6 +28,8 @@ function App(){
       <button onClick={handelClick}>Inc + </button>
       <button onClick={handelClicks}>Dec - </button>
       <button onClick={handelClickss}>Reset 0 </button>
+
+      <Map_list />
     </div>
   );
 }
