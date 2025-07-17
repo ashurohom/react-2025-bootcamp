@@ -11,5 +11,4 @@ function Name() {
     </div>
   )
 }
-
 export default Name
