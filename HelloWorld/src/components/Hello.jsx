@@ -2,6 +2,7 @@ import React from "react";
 import '../App.css'
 import Props from "./Props";
 import { useState } from "react";
+import Name from "./Name"; 
 
 export const Hello = () => {
 
@@ -23,6 +24,8 @@ export const Hello = () => {
             <h1>Count = {count} </h1>
             
             <Props name="Nikhil" rollno='12' />
+
+            <Name />
 
         </div>
     );
