@@ -2,6 +2,7 @@ import Welcome from "./Welcome";
 // import Footer from "./Footer";
 import { useState } from "react";
 import Map_list from "./map_list";
+import keyList from "./keyList";
 
 function App(){
     const [count,setCount] = useState(0);
@@ -30,6 +31,7 @@ function App(){
       <button onClick={handelClickss}>Reset 0 </button>
 
       <Map_list />
+      <keyList />
     </div>
   );
 }
