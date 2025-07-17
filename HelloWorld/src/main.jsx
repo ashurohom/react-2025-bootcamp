@@ -10,9 +10,9 @@ createRoot(document.getElementById('root')).render(
     {/* <App /> */}
     {/* <Newapp /> */}
     {<Hello />}
-    {<Props name="Ashu" />}
-    {<Props name="Soham" />}
-    {<Props name="Nikhil" />}
+    {<Props name="Ashu" rollno='10' />}
+    {<Props name="Soham" rollno='11' />}
+    {<Props name="Nikhil" rollno='12' />}
     
   </StrictMode>,
 )
