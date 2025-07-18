@@ -3,6 +3,11 @@ import { useState } from 'react'
 
 function Form() {
     const [name, setName] = useState('')
+
+    const handelChange = (event) => {
+        setName(event.target.value)
+    };
+
   return (
     <div>
       
@@ -10,5 +15,4 @@ function Form() {
   )
 }
 
-export de
-import { useState } from 'react'fault Form
+export default Form
