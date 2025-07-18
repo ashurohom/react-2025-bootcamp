@@ -4,13 +4,17 @@ import './index.css'
 import { App, Newapp } from './App.jsx'
 import { Hello } from './components/Hello.jsx'
 import Form from './components/form.jsx'
+import UseEffect from './components/UseEffect.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     {/* <App /> */}
     {/* <Newapp />  */}
-    <Hello />
+    {/* <Hello /> */}
     <Form />
+    <UseEffect />
+    
+
 
     
   </StrictMode>,
