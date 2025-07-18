@@ -5,6 +5,7 @@ import { App, Newapp } from './App.jsx'
 import { Hello } from './components/Hello.jsx'
 import Form from './components/form.jsx'
 import UseEffect from './components/UseEffect.jsx'
+import AutoCounter from './components/UseEffectCounter.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
@@ -13,6 +14,7 @@ createRoot(document.getElementById('root')).render(
     {/* <Hello /> */}
     <Form />
     <UseEffect />
+    <AutoCounter />
     
 
 
