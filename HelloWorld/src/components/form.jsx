@@ -10,6 +10,9 @@ function Form() {
 
   return (
     <div>
+        <h2>React Form Example</h2>
+        <input type='text' value={name} onChange={handelChange} placeholder='Enter Input'/>
+        <h3>Input Field Message is : {name}</h3>
       
     </div>
   )
