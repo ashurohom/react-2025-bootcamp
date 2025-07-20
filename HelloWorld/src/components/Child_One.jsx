@@ -1,10 +1,9 @@
-import React, { useState } from 'react'
-
-function Child_One() {
+function Child_One(setUser) {
   return (
     <div>
-      <p>Child One {user}</p>
-      <input type='text' placeholder='Enter User' onChange={(e) => setUser(e.target.value) }></input>
+      <p>Child One</p>
+      <input type='text' onChange={(e) => setUser(e.target.value)} placeholder='Enter User'></input>
+      <hr />
     </div>
   )
 }

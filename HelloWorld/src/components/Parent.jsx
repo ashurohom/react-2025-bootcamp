@@ -1,7 +1,6 @@
-import React from 'react'
+import { useState } from 'react'
 import Child_One from './Child_One'
 import Child_Two from './Child_Two'
-import React, { useState } from 'react'
 
 
 function Parent() {
@@ -10,14 +9,10 @@ function Parent() {
   return (
     <div>
       <h1>Parent</h1>
-      <hr />
-      <Child_One />
-      <hr />
-      <Child_Two />
-      <hr />
-
+      <Child_One setUser={setUser}/>
+      <Child_Two user={user}/>
     </div>
   )
 }
 
-export default Parent
+export default Parent;

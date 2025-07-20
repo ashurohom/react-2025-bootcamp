@@ -1,9 +1,7 @@
-import React from 'react'
-
-function Child_Two() {
+function Child_Two({user}) {
   return (
     <div>
-        <p>Child Two</p>
+        <h4>Child Two = {user}</h4>
     </div>
   )
 }
