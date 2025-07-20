@@ -12,8 +12,8 @@ createRoot(document.getElementById('root')).render(
     {/* <App /> */}
     {/* <Newapp />  */}
     {/* <Hello /> */}
-    <Form />
-    <UseEffect />
+    {/* <Form /> */}
+    {/* <UseEffect /> */}
     <AutoCounter />
     
 
