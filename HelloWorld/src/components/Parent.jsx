@@ -2,10 +2,8 @@ import { useState } from 'react'
 import Child_One from './Child_One'
 import Child_Two from './Child_Two'
 
-
 function Parent() {
         const [user, setUser] = useState('')
-
   return (
     <div>
       <h1>Parent</h1>
@@ -14,5 +12,4 @@ function Parent() {
     </div>
   )
 }
-
 export default Parent;

@@ -1,4 +1,4 @@
-function Child_One(setUser) {
+function Child_One({setUser}) {
   return (
     <div>
       <p>Child One</p>
@@ -7,5 +7,4 @@ function Child_One(setUser) {
     </div>
   )
 }
-
 export default Child_One
