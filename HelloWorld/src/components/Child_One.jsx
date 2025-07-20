@@ -1,10 +1,10 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 function Child_One() {
-    
   return (
     <div>
-      <p>Child One</p>
+      <p>Child One {user}</p>
+      <input type='text' placeholder='Enter User' onChange={(e) => setUser(e.target.value) }></input>
     </div>
   )
 }

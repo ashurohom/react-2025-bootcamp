@@ -1,8 +1,12 @@
 import React from 'react'
 import Child_One from './Child_One'
 import Child_Two from './Child_Two'
+import React, { useState } from 'react'
+
 
 function Parent() {
+        const [user, setUser] = useState('')
+
   return (
     <div>
       <h1>Parent</h1>
