@@ -16,7 +16,7 @@ createRoot(document.getElementById('root')).render(
     {/* <Hello /> */}
     {/* <Form /> */}
     {/* <UseEffect /> */}
-    <AutoCounter />
+    {/* <AutoCounter /> */}
     <Parent />
     <Fetch_API />
     

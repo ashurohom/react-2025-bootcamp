@@ -1,6 +1,9 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 function Fetch_API() {
+    const [data, setData] = useState([])
+
+    
   return (
     <div>
       
