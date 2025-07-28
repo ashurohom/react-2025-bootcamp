@@ -14,7 +14,7 @@ function Fetch_API() {
 
   return (
     <div>
-      <h2>Github User Data</h2>
+      <h2>Github User Data : </h2>
         <ul>
             {data.map(user => (
                 <li key={user.id}>{user.login}</li>
