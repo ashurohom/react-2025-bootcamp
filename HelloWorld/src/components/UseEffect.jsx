@@ -20,3 +20,5 @@ function UseEffect() {
 }
 
 export default UseEffect
+
+// use effect
