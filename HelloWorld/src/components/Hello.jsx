@@ -14,7 +14,7 @@ export const Hello = () => {
     
     return (
         <div>
-            <h1>Hello Ashu, WelCome React Tutorial</h1>
+            <h1>Hello <b>Ashu</b>, WelCome React Tutorial</h1>
             
             <Props name="Ashu" rollno='10' />
             <p>You are Great Person</p>
