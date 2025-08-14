@@ -23,7 +23,7 @@ createRoot(document.getElementById('root')).render(
         <Parent />
         {/* <Fetch_API /> */}
     
-    </StrictMode>
+      </StrictMode>
     </Routes>
   </BrowserRouter>
 )
