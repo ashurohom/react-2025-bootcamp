@@ -13,17 +13,21 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom'
 createRoot(document.getElementById('root')).render(
   <BrowserRouter>
   <Routes>
-      <StrictMode>
+ 
         {/* <App /> */}
         {/* <Newapp />  */}
         {/* <Hello /> */}
         {/* <Form /> */}
         {/* <UseEffect /> */}
         {/* <AutoCounter /> */}
-        <Parent />
+        {/* <Parent /> */}
         {/* <Fetch_API /> */}
+
+        <Route path="/" element={<Parent />} />
+        <Route path="/Hello" element={<Hello />} />
+        <Route path="/Fetch_API" element={<Fetch_API />} />
     
-      </StrictMode>
+
     </Routes>
   </BrowserRouter>
 )
