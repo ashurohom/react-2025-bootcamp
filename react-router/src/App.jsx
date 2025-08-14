@@ -30,10 +30,12 @@ function App() {
         Click on the Vite and React logos to learn more
       </p> */}
 
-        {/* <Link to="/">App</Link> */}
+      <div className="navbar">
         <Link to="/home">Home</Link>
         <Link to="/about">About</Link>
         <Link to="/contact">Contact</Link>
+      </div>
+
 
     </>
   )
