@@ -8,10 +8,11 @@ import UseEffect from './components/UseEffect.jsx'
 import AutoCounter from './components/UseEffectCounter.jsx'
 import Parent from './components/Parent.jsx'
 import Fetch_API from './components/Fetch_API.jsx'
-import { BrowserRouter } from 'react-router-dom'
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
 
 createRoot(document.getElementById('root')).render(
   <BrowserRouter>
+  <Routes>
       <StrictMode>
         {/* <App /> */}
         {/* <Newapp />  */}
@@ -20,8 +21,9 @@ createRoot(document.getElementById('root')).render(
         {/* <UseEffect /> */}
         {/* <AutoCounter /> */}
         <Parent />
-        <Fetch_API />
-      
+        {/* <Fetch_API /> */}
+    
     </StrictMode>
+    </Routes>
   </BrowserRouter>
 )
