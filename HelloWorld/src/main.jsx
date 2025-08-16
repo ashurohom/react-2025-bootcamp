@@ -11,23 +11,25 @@ import Fetch_API from './components/Fetch_API.jsx'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 
 createRoot(document.getElementById('root')).render(
-  <BrowserRouter>
-  <Routes>
- 
-        {/* <App /> */}
-        {/* <Newapp />  */}
-        {/* <Hello /> */}
-        {/* <Form /> */}
-        {/* <UseEffect /> */}
-        {/* <AutoCounter /> */}
-        {/* <Parent /> */}
-        {/* <Fetch_API /> */}
+  <StrictMode>
+      <BrowserRouter>
+      <Routes>
 
-        <Route path="/" element={<Parent />} />
-        <Route path="/Hello" element={<Hello />} />
-        <Route path="/Fetch_API" element={<Fetch_API />} />
-    
+            {/* <App /> */}
+            {/* <Newapp />  */}
+            {/* <Hello /> */}
+            {/* <Form /> */}
+            {/* <UseEffect /> */}
+            {/* <AutoCounter /> */}
+            {/* <Parent /> */}
+            {/* <Fetch_API /> */}
 
-    </Routes>
-  </BrowserRouter>
+            <Route path="/" element={<Parent />} />
+            <Route path="/Hello" element={<Hello />} />
+            <Route path="/Fetch_API" element={<Fetch_API />} />
+        
+
+        </Routes>
+      </BrowserRouter>
+  </StrictMode>
 )

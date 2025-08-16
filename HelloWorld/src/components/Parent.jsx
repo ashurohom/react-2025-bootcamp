@@ -8,8 +8,8 @@ function Parent() {
   return (
     <div>
     <Link to="/"><h3>Parent</h3></Link>
-    <Link to="Hello"><h3>Hello</h3></Link> 
-    <Link to="Fetch_API"><h3>Fetch_API</h3></Link> 
+    <Link to="/Hello"><h3>Hello</h3></Link> 
+    <Link to="/Fetch_API"><h3>Fetch_API</h3></Link> 
     
       <h1>Parent</h1>
       <Child_One setUser={setUser}/>
