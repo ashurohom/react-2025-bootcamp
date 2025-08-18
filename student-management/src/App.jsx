@@ -10,7 +10,7 @@ function App() {
       {/* Navbar */}
       <nav className="navbar">
         <Link to="/">Home</Link>
-        <Link to="/students">Students</Link>
+        <Link to="/students">Student</Link>
         <Link to="/about">About</Link>
       </nav>
 
