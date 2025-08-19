@@ -53,6 +53,21 @@ function Student() {
         {students.map((student) => (
           <li key={student.id}>
             {student.name} (Age: {student.age})
+
+             <button
+              onClick={() => handleDeleteStudent(student.id)}
+              style={{
+                marginLeft: "10px",
+                background: "red",
+                color: "white",
+                border: "none",
+                padding: "4px 8px",
+                cursor: "pointer",
+              }}
+            >
+              Delete
+            </button>
+            
           </li>
         ))}
       </ul>
