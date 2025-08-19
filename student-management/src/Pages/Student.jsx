@@ -37,6 +37,12 @@ function Student() {
     setAge("");
   };
 
+    // ✅ Delete student
+  const handleDeleteStudent = (id) => {
+    const updatedList = students.filter((student) => student.id !== id);
+    setStudents(updatedList);
+  };
+
   // Step 3: Render the component
   return (
     <div style={{ padding: "20px" }}>
