@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import "./Student.css";
 
 function Student() {
   const [students, setStudents] = useState([
@@ -67,7 +68,21 @@ function Student() {
             >
               Delete
             </button>
-            
+
+            <button
+              
+              style={{
+                marginLeft: "10px",
+                background: "skyblue",
+                color: "white",
+                border: "none",
+                padding: "4px 8px",
+                cursor: "pointer",
+              }}
+            >
+              Update
+            </button>
+
           </li>
         ))}
       </ul>
