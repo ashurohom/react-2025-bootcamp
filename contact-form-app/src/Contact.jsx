@@ -1,41 +1,75 @@
-import React from 'react'
-import './App.css'
+import React, { useState } from "react";
+import './App.css'; 
 
 function Contact() {
+  // Step 2: useState for form data
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    subject: "",
+    message: ""
+  });
+
+  // Step 3: handle input changes
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({ ...formData, [name]: value });
+  };
+
+  // Step 4: handle form submit
+  const handleSubmit = (e) => {
+    e.preventDefault(); // stop page refresh
+    console.log("Form Submitted:", formData);
+    alert("Thank you! We received your message.");
+    setFormData({ name: "", email: "", subject: "", message: "" }); // clear form
+  };
+
   return (
     <div className="contact-container">
       <h2>Contact Us</h2>
-      <form className="contact-form">
-        <div className="form-group">
-          <label htmlFor="name">Full Name</label>
-          <input type="text" id="name" placeholder="Enter your full name" />
-        </div>
+      <form className="contact-form" onSubmit={handleSubmit}>
+        <label>Name:</label>
+        <input
+          type="text"
+          name="name"
+          placeholder="Enter your name"
+          value={formData.name}
+          onChange={handleChange}
+          required
+        />
 
-        <div className="form-group">
-          <label htmlFor="email">Email Address</label>
-          <input type="email" id="email" placeholder="Enter your email" />
-        </div>
+        <label>Email:</label>
+        <input
+          type="email"
+          name="email"
+          placeholder="Enter your email"
+          value={formData.email}
+          onChange={handleChange}
+          required
+        />
 
-        <div className="form-group">
-          <label htmlFor="phone">Phone Number</label>
-          <input type="tel" id="phone" placeholder="Enter your phone number" />
-        </div>
+        <label>Subject:</label>
+        <input
+          type="text"
+          name="subject"
+          placeholder="Enter subject"
+          value={formData.subject}
+          onChange={handleChange}
+        />
 
-        <div className="form-group">
-          <label htmlFor="subject">Subject</label>
-          <input type="text" id="subject" placeholder="Enter subject" />
-        </div>
+        <label>Message:</label>
+        <textarea
+          name="message"
+          placeholder="Write your message..."
+          value={formData.message}
+          onChange={handleChange}
+          required
+        />
 
-        <div className="form-group">
-          <label htmlFor="message">Message</label>
-          <textarea id="message" rows="4" placeholder="Write your message here..."></textarea>
-        </div>
-
-        <button type="submit" className="submit-btn">Submit</button>
+        <button type="submit">Send Message</button>
       </form>
     </div>
   );
 }
 
-
-export default Contact
+export default Contact;
