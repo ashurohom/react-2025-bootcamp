@@ -1,15 +1,8 @@
 import React from 'react'
 import { Routes, Route, Link } from 'react-router-dom'  
 import './App.css'
-
-function Home() {
-  return <h2>Home</h2>
-} 
-
-function Contact() {
-  return <h2>Contact</h2>
-}
-
+import Home from './Home'
+import Contact from './Contact'
 
 function App() {
   return (
