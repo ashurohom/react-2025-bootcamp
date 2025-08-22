@@ -3,73 +3,88 @@ import "./Home.css";
 
 function Home() {
   return (
-    <div className="home-container">
+    <div className="home">
       {/* Hero Section */}
-      <section className="hero">
-        <div className="hero-content">
-          <h1>Welcome to My Awesome Website</h1>
-          <p>
-            Discover modern web development tutorials, projects, and resources
-            that help you learn React, Django, and more.
-          </p>
-          <button className="hero-btn">Get Started</button>
-        </div>
-      </section>
+      <header className="hero">
+        <h1>Welcome to My Tech World</h1>
+        <p>
+          Explore tutorials, projects, and resources to become a better
+          developer.
+        </p>
+        <button className="cta-btn">Get Started</button>
+      </header>
 
       {/* About Section */}
       <section className="about">
-        <h2>About Us</h2>
+        <h2>About This Website</h2>
         <p>
-          We are passionate developers sharing knowledge with the world. Our
-          mission is to simplify coding concepts for students, beginners, and
-          professionals by breaking them into easy lessons with real-world
-          projects.
+          This platform is designed for students and beginners who want to learn
+          coding step by step. You will find tutorials on React, Django, Odoo,
+          and more with practical projects and real-world examples.
+        </p>
+        <p>
+          Our goal is to make learning fun, interactive, and simple. Whether
+          you're just starting your coding journey or polishing your skills,
+          we’ve got you covered.
         </p>
       </section>
 
       {/* Features Section */}
       <section className="features">
-        <h2>Our Services</h2>
-        <div className="features-grid">
-          <div className="feature-card">
-            <h3>React Tutorials</h3>
-            <p>Step-by-step lessons on React from beginner to advanced.</p>
+        <h2>What You Will Learn</h2>
+        <div className="feature-cards">
+          <div className="card">
+            <h3>React</h3>
+            <p>Learn modern frontend development using React step by step.</p>
           </div>
-          <div className="feature-card">
+          <div className="card">
             <h3>Django REST API</h3>
-            <p>Learn how to build REST APIs with Django & Django REST Framework.</p>
+            <p>
+              Build scalable and secure backend applications with Django REST
+              Framework.
+            </p>
           </div>
-          <div className="feature-card">
-            <h3>Full Stack Projects</h3>
-            <p>Combine frontend and backend into powerful applications.</p>
+          <div className="card">
+            <h3>Odoo</h3>
+            <p>
+              Customize business applications with Odoo and integrate third-party
+              services.
+            </p>
+          </div>
+          <div className="card">
+            <h3>Projects</h3>
+            <p>
+              Practice real-world projects like Contact Book, Blog API, and
+              E-commerce.
+            </p>
           </div>
         </div>
       </section>
 
-      {/* Testimonials Section */}
-      <section className="testimonials">
-        <h2>What Our Students Say</h2>
-        <div className="testimonials-grid">
-          <div className="testimonial-card">
-            <p>
-              "The tutorials are super clear and beginner-friendly. I built my
-              first React app in just a week!"
-            </p>
-            <h4>- Ashu</h4>
-          </div>
-          <div className="testimonial-card">
-            <p>
-              "Amazing teaching style! The teacher explains every concept like a
-              friend, not just dumping code."
-            </p>
-            <h4>- Rohom</h4>
-          </div>
-        </div>
+      {/* Blog Section */}
+      <section className="blog">
+        <h2>Latest Articles</h2>
+        <article>
+          <h3>🚀 Getting Started with React</h3>
+          <p>
+            React is a powerful JavaScript library for building dynamic user
+            interfaces. In this article, we’ll cover how to set up your first
+            React app using Vite and explore the project structure.
+          </p>
+        </article>
+        <article>
+          <h3>⚡ Introduction to Django REST Framework</h3>
+          <p>
+            DRF is one of the most popular frameworks for building RESTful APIs
+            in Python. Learn how to build your first API and connect it with a
+            frontend app.
+          </p>
+        </article>
       </section>
 
-      {/* Footer Section */}
+      {/* Footer */}
       <footer className="footer">
-        <p>© 2025 My Awesome Website | Built with ❤️ using React</p>
+        <p>© 2025 My Tech World | Built with ❤️ using React</p>
       </footer>
     </div>
   );
