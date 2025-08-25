@@ -1,0 +1,133 @@
+/* Container - Split Screen */
+.signin-container {
+  display: flex;
+  min-height: 100vh;
+  background: #f5f7fa;
+}
+
+/* Left side */
+.signin-left {
+  flex: 1;
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  text-align: center;
+}
+
+.signin-left h1 {
+  font-size: 3rem;
+  margin-bottom: 15px;
+}
+
+.signin-left p {
+  font-size: 1.2rem;
+  max-width: 400px;
+  line-height: 1.6;
+}
+
+/* Right side - Form */
+.signin-right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+}
+
+.signin-form {
+  background: white;
+  padding: 40px;
+  border-radius: 16px;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+.signin-form h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #333;
+}
+
+/* Input group with icons */
+.input-group {
+  display: flex;
+  align-items: center;
+  margin-bottom: 18px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 10px 15px;
+  background: #fafafa;
+  transition: border 0.3s ease;
+}
+
+.input-group:focus-within {
+  border-color: #2575fc;
+}
+
+.input-group .icon {
+  margin-right: 10px;
+  color: #2575fc;
+}
+
+.input-group input {
+  flex: 1;
+  border: none;
+  outline: none;
+  background: transparent;
+  font-size: 1rem;
+}
+
+/* Button */
+.signin-btn {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: transform 0.2s ease, background 0.3s ease;
+}
+
+.signin-btn:hover {
+  transform: translateY(-3px);
+  background: linear-gradient(135deg, #2575fc, #6a11cb);
+}
+
+/* Extra links */
+.extra-link {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.extra-link a {
+  color: #2575fc;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.extra-link a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .signin-container {
+    flex-direction: column;
+  }
+
+  .signin-left {
+    padding: 60px 20px;
+  }
+
+  .signin-right {
+    padding: 20px;
+  }
+}
