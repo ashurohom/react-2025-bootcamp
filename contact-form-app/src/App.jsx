@@ -1,9 +1,10 @@
-import React from 'react'
+import React, { Component } from 'react'
 import { Routes, Route, Link } from 'react-router-dom'  
 import './App.css'
 import Home from './Home'
 import Contact from './Contact'
 import Signup from './Signup'
+
 
 function App() {
   return (
